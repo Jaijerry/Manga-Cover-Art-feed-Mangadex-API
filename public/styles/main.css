@@ -1,0 +1,55 @@
+body {
+    background: #212534;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: aliceblue;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    margin: 12px;
+    border-radius: 8px;
+    background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+    animation: spin 1.5s linear infinite;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+.card h3 {
+    text-align: center;
+    color: antiquewhite;
+}
+
+img {
+    margin: 22px;
+    box-shadow: 0 0 5px 6px black;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    gap: 16px;
+}

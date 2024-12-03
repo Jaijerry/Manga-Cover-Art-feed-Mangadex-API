@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>MangaFeed</h2>
+
+    <div class="feed">
+
+    <% for( let index = 0; index < cover.length; index++ ) { %>
+        <div class="card">
+            <img src=<%= cover[index] %>>
+            <h3><%= title[index] %></h3>
+        </div>
+    <% } %>
+    
+    </div>
+</body>
+</html>
